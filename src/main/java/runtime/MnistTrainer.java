@@ -30,10 +30,10 @@ public class MnistTrainer {
 
 
         try {
-            imageProvider = new MnistImageProvider(new File("D:\\Download\\train-images.idx3-ubyte"));
-            labelProvider = new MnistLabelProvider(new File("D:\\Download\\train-labels.idx1-ubyte"));
-            testImageProvider = new MnistImageProvider(new File("D:\\Download\\t10k-images-idx3-ubyte.gz"));
-            testLabelProvider = new MnistLabelProvider(new File("D:\\Download\\t10k-labels-idx1-ubyte.gz"));
+            imageProvider = new MnistImageProvider(new File("path-to-file\\train-images.idx3-ubyte"));
+            labelProvider = new MnistLabelProvider(new File("path-to-file\\train-labels.idx1-ubyte"));
+            testImageProvider = new MnistImageProvider(new File("path-to-file\\t10k-images-idx3-ubyte.gz"));
+            testLabelProvider = new MnistLabelProvider(new File("path-to-file\\t10k-labels-idx1-ubyte.gz"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
